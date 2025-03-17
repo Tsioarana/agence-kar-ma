@@ -1,5 +1,0 @@
-creer projet agence en react js + vite et tailwind + style css,
-menu: logo(Acceuil), Qui somme nous, Apropos, Services, Actualite, Contact
-le projet avec root ex: http://localhost:5173/Qui somme nous, http://localhost:5173/Apropos, ... ainsi de suite
-faite le navbar en navbar sticky et aussi bien responsive faite dans le responsive avec petit animation
-et aussi faite le loading de site avec animation gif (faite avec lien de gif)
