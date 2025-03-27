@@ -1,0 +1,220 @@
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0c6980;
+    color: white;
+    padding: 80px 0 0;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  
+  .hero-container .hero-info {
+    max-width: 50%;
+    margin-bottom: 50px;
+    font-family: Montserrat-regular;
+
+  }
+  
+  .hero-container .hero-info h2 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  
+  .hero-container .hero-info p {
+    margin-bottom: 20px;
+    color: #c0f0f7;
+    font-size: 1.3rem;
+    font-family: Montserrat-regular;
+  }
+  
+  .hero-container .btn {
+    display: inline-block;
+    background-color: #51a6bb;
+    color: #f1f1f1;
+    text-decoration: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: 0.3s;
+    margin-top: 60px;
+  }
+  
+  .hero-container .btn:hover {
+    background-color: #005383;
+  }
+  
+  .hero-container .hero-images {
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+  }
+  
+  .hero-container .hero-images img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+
+
+
+
+
+
+  .karma-services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 150px;
+    background-color: #f5f5f5;
+    font-family: Montserrat;
+}
+.karma-services .container-services {
+    position: relative;
+    text-align: center;
+    width: 80%;
+    max-width: 900px;
+}
+.karma-services .logo-karma-services {
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+.logo-karma-services img {
+    width: 400px;
+}
+.logo-karma-services .logo-simple {
+    display: none;
+  }
+.logo-karma-services:hover {
+    transform: scale(1.1);
+}
+.karma-services .element {
+    position: absolute;
+    background-color: #0c6980;
+    color: white;
+    padding: 12px 5px;
+    width: 170px;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.container-services:hover .element, 
+.container-services:hover .arrow {
+    opacity: 1;
+    transform: scale(1);
+}
+.container-services:hover #marketing, .container-services:hover #arrow-marketing { transition-delay: 0.1s; }
+.container-services:hover #formation, .container-services:hover #arrow-formation { transition-delay: 0.2s; }
+.container-services:hover #communication, .container-services:hover #arrow-communication { transition-delay: 0.3s; }
+.container-services:hover #strategie, .container-services:hover #arrow-strategie { transition-delay: 0.4s; }
+.container-services:hover #brand, .container-services:hover #arrow-brand { transition-delay: 0.5s; }
+
+/* Position des éléments */
+#marketing { top: -75px; left: 50%; transform: translateX(-50%); }
+#formation { top: 40px; right: 40px; }
+#communication { bottom: -65px; right: 160px; }
+#strategie { bottom: -70px; left: 135px; }
+#brand { top: 55px; left: 35px; }
+
+@media (max-width: 1350px) {
+  #marketing { top: -75px; left: 50%; transform: translateX(-50%); }
+  #formation { top: 40px; right: -5px; }
+  #communication { bottom: -75px; right: 145px; }
+  #strategie { bottom: -70px; left: 125px; }
+  #brand { top: 60px; left: -15px; }
+}
+@media (max-width: 1250px) {
+  #marketing { top: -75px; left: 50%; transform: translateX(-50%); }
+  #formation { top: 40px; right: -40px; }
+  #communication { bottom: -70px; right: 100px; }
+  #strategie { bottom: -70px; left: 75px; }
+  #brand { top: 60px; left: -40px; }
+}
+@media (max-width: 1125px) {
+  #formation { top: 40px; right: -100px; }
+  #brand { top: 60px; left: -100px; }
+}
+
+@media (max-width: 960px) {
+  #formation { top: 40px; right: -150px; }
+  #communication { bottom: -70px; right: -20px; }
+  #strategie { bottom: -70px; left: -45px; }
+  #brand { top: 60px; left: -150px; }
+}
+
+@media (max-width: 860px) {
+  #formation { top: 40px; right: -200px; }
+  #brand { top: 60px; left: -200px; }
+}
+
+@media (max-width: 768px) {
+  .karma-services {
+    padding: 10px 0;
+}
+  .karma-services .element {
+    opacity: 1;
+    position: static;
+    width: 100%;
+  }
+  .logo-karma-services .logo-flech {
+    display: none;
+  }
+  .logo-karma-services .logo-simple {
+    display: block;
+    width: 200px;
+    margin-bottom: 20px;
+  }
+  #marketing { transform: translateX(0); margin-bottom: 10px; }
+  #formation { margin-bottom: 10px; }
+  #communication { margin-bottom: 10px; }
+  #strategie { margin-bottom: 10px; }
+  #brand { margin-bottom: 10px; }
+}
+
+
+  @media (max-width: 1024px) {
+    .hero-container {
+      flex-direction: column;
+      /* text-align: center; */
+      padding: 40px 15px 0;
+    }
+  
+    .hero-container .hero-info {
+      max-width: 100%;
+    }
+  
+    .hero-container .hero-images {
+      max-width: 80%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .hero-container {
+      padding: 20px 10px 0;
+    }
+  
+    .hero-container .hero-info h2 {
+      font-size: 15px;
+    }
+  
+    .hero-container .hero-info p {
+      font-size: 15px;
+    }
+  
+    .hero-container .btn {
+      padding: 10px 15px;
+      font-size: 0.9rem;
+    }
+  
+    .hero-container .hero-images {
+      max-width: 100%;
+    }
+  }
+  

@@ -1,0 +1,149 @@
+.parallax-services {
+    background-image: url('../../assets/images/img_3.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-parallax {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.753);
+}
+.nos_services {
+    margin: auto;
+    padding: 50px 0 180px;
+    max-width: 1000px;
+    text-align: left;
+}
+
+.nos_services p {
+    font-size: 1.1rem;
+    font-family: Montserrat-regular;
+}
+.nos_services p b {
+    font-family: Montserrat;
+    color: #000;
+}
+.nos_services .bold{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #000000da;
+}
+.nos_services .cta{
+    font-size: 1.5rem;
+    color: #00a8a8;
+}
+.nos_services svg text {
+    stroke: #126E88;
+    stroke-width: 3;
+    font-size: 6rem;
+    color: #00a8a8;
+    font-family: Montserrat;
+    animation: textAnimate 5s infinite alternate;
+    
+  }
+  
+  @keyframes textAnimate {
+    0% {
+      stroke-dasharray: 0 50%;
+      stroke-dashoffset:  20%;
+      fill:hsl(189, 84%, 48%)
+  
+    }
+    
+    100% {
+      stroke-dasharray: 50% 0;
+      stroke-dashoffstet: -20%;
+      fill: hsla(189, 68%, 75%,0%)
+    }
+    
+  }
+  
+
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: #126E88;
+    color: white;
+    text-align: center;
+    padding: 20px 0 20px;
+}
+
+.carousel {
+    display: flex;
+    padding: 50px 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    font-family: Montserrat-regular;
+}
+.slide h2 {
+    font-family: Montserrat;
+}
+
+.download-btn {
+    background: #1FA6CC;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 60px;
+    color: white;
+    cursor: pointer;
+    margin-top: 80px;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.prev, .next {
+    background: #126E88;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 3rem;
+}
+.pagination { bottom: 10px; top: auto; justify-content: center; }
+.pagination span { width: 5px; height: 5px; margin: 0 5px; background: gray; border-radius: 50%; cursor: pointer; }
+.pagination .active { background: rgb(6, 161, 182); }
+@media (max-width: 600px) {
+    .carousel-container {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .download-btn {
+        padding: 8px 15px;
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .nos_services {
+        padding: 50px 20px 100px;
+    }
+}
+@media (max-width: 768px) {
+    .nos_services text {
+        font-size: 5rem !important;
+    }
+}
+@media (max-width: 450px) {
+    .nos_services text {
+        font-size: 2rem !important;
+    }
+}

@@ -1,0 +1,123 @@
+.container-card {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+.container-card h1 {
+    color: #0c6980;
+    font-size: 2.7rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: Montserrat;
+}
+.container-card h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.container-card .subtitle {
+    font-size: 1.5rem;
+    color: #10708d;
+    font-family: Montserrat-regular;
+}
+.container-card .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto;
+    padding: 15px 0;
+    border: none;
+    font-weight: bold;
+    font-family: Montserrat-regular;
+    gap: 15px;
+}
+.container-card .card p {
+    color: #c0f0f7;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.container-card .card-light,
+.card-dark {
+    padding: 15px;
+    /* text-align: center; */
+    width: 100%;
+    margin: 5px 0;
+    height: 120px;
+}
+
+@keyframes progress {
+    from {
+      width: 2%;
+    }
+    to {
+      width: 65%;
+    }
+  }
+  
+  .card-light,
+  .card-dark {
+    color: white;
+    width: 2%;
+    padding: 15px;
+    transition: width 2s ease-out;
+  }
+  
+  .card-light {
+    background-color: #0c6980;
+    border-radius: 0 60px 60px 0;
+    align-self: flex-start;
+    text-align: start;
+  }
+  
+  .card-dark {
+    background-color: #00a8a8;
+    border-radius: 60px 0 0 60px;
+    align-self: flex-end;
+    text-align: end;
+  }
+  
+  .card-light.animate,
+  .card-dark.animate {
+    animation: progress 2.5s ease-out forwards;
+  }
+  
+  @media (max-width: 840px) {
+    .container-card .card-light,
+    .card-dark {
+        height: auto;
+    }
+  }
+
+@media (max-width: 600px) {
+    .container-card {
+        padding: 15px;
+    }
+    .container-card .card {
+        font-size: 14px;
+        width: 90%;
+    }
+    .container-card h1 {
+        font-size: 2rem;
+    }
+    .container-card .subtitle {
+        font-size: 1.3rem;
+    }
+    
+    .container-card .card-light {
+        width: 100%;
+    }
+    .container-card .card-dark {
+        width: 100%;
+    }
+    .container-card .card p {
+        font-size: 1rem;
+    }
+    @keyframes progress {
+        from {
+          width: 2%;
+        }
+        to {
+          width: 100%;
+        }
+      }
+      
+}

@@ -1,0 +1,200 @@
+/* Styles de base */
+.contact-container {
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    gap: 50px;
+    padding: 150px;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Flexbox pour centrer le titre */
+  .contact-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Formulaire stylé */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    max-width: 600px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    animation: slideUp 0.8s ease-in-out;
+  }
+  
+  /* Lignes de formulaire */
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  
+  .form-row input,
+  .form-row textarea {
+    width: 48%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Pleine largeur pour le textarea */
+  .full-width textarea {
+    width: 100%;
+    height: 130px;
+    resize: none;
+  }
+  
+  /* Effet focus */
+  .form-row input:focus,
+  .full-width textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    background: #fff;
+  }
+  
+  /* Animation au focus */
+  @keyframes inputGlow {
+    0% { box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); }
+    100% { box-shadow: 0 0 12px rgba(0, 123, 255, 0.8); }
+  }
+  
+  .form-row input:focus,
+  .full-width textarea:focus {
+    animation: inputGlow 0.5s ease-in-out infinite alternate;
+  }
+  
+  /* Input file stylé */
+  .file-input {
+    position: relative;
+    width: 48%;
+  }
+  
+  .file-input input {
+    opacity: 0;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+  }
+  
+  .file-input span {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #f8f8f8;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Effet hover */
+  .file-input:hover span {
+    background: #e3f2fd;
+    border-color: #007bff;
+  }
+  
+  /* Bouton Envoyer */
+  .send-btn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: transform 0.2s ease, background 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Effet au survol */
+  .send-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #0056b3, #003f80);
+  }
+  
+  /* Animation du bouton */
+  .send-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: left 0.4s ease-in-out;
+  }
+  
+  .send-btn:hover::before {
+    left: 100%;
+  }
+  
+  /* Animation fadeIn */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animation slideUp */
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .contact-form {
+      padding: 20px;
+    }
+  
+    .form-row {
+      flex-direction: column;
+    }
+  
+    .form-row input,
+    .file-input,
+    .full-width textarea {
+      width: 100%;
+    }
+  }
+  
