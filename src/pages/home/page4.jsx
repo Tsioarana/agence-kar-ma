@@ -104,7 +104,7 @@ const Page4 = () => {
             <br />
             <p className='reveal-right'>
               Nous travaillons en étroite collaboration avec vous pour comprendre <b>vos besoins et vos 
-                {/* <br /> */}
+                <br />
               enjeux,</b> et pour vous proposer des <b>solutions innovantes</b> et adaptées à votre entreprise.
             </p>
             <br /><br />
