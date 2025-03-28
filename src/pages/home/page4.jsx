@@ -94,7 +94,7 @@ const Page4 = () => {
             <p className="bold fade-in">
               Ici, tout est pensé pour répondre à vos besoins spécifiques.
             </p>
-            <p className='reveal-left'>
+            <p className='reveal-right'>
               Que vous souhaitiez élaborer une <b>stratégie de communication sur-mesure,</b> mettre en
                {/* <br /> */}
               place une <b>campagne publicitaire efficace</b> ou <b>optimiser votre présence en ligne,</b> notre
@@ -108,7 +108,7 @@ const Page4 = () => {
               enjeux,</b> et pour vous proposer des <b>solutions innovantes</b> et adaptées à votre entreprise.
             </p>
             <br /><br />
-            <p className='cta reveal-left'>
+            <p className='cta reveal-right'>
               Rejoignez les nombreux clients qui nous font confiance.
             </p>
           </div>

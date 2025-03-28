@@ -21,9 +21,9 @@ const Page2 = () => {
 
   return (
     <div className="container-card">
-      <h1 className="reveal-left">Donc, vous voulez propulser <br /> votre entreprise ?</h1>
-      <h2 className="reveal-left">L’agence qui valorise vos idées.</h2>
-      <p className="subtitle reveal-left">
+      <h1 className="reveal-right">Donc, vous voulez propulser <br /> votre entreprise ?</h1>
+      <h2 className="reveal-right">L’agence qui valorise vos idées.</h2>
+      <p className="subtitle reveal-right">
         Nous avons développé <strong>cinq axes</strong> pour vous offrir un <br />
         <strong>accompagnement complet et personnalisé :</strong>
       </p>
