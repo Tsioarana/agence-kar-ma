@@ -1,0 +1,66 @@
+.souscription-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 100px;
+    font-family: Montserrat-regular;
+}
+.souscription-container p {
+    color: #0000008a;
+    font-size: 0.8rem;
+}
+.souscription-title {
+    color: #0c6980;
+    font-weight: bold;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+}
+.souscription-text-start {
+    color: #0000008a;
+    font-weight: bold;
+    font-family: Montserrat;
+    font-size: 1.2rem;
+}
+.souscription-container h5 {
+    color: #0000008a;
+    font-weight: bold;
+    font-family: Montserrat;
+    font-size: 1rem;
+}
+
+.souscription-card {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-family: Montserrat-regular;
+    font-size: 0.8rem;
+}
+.souscription-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+.souscription-table th, .souscription-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+.souscription-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #0c6980;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.souscription-btn:hover {
+    background-color: #003366;
+}

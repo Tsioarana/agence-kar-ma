@@ -1,0 +1,309 @@
+:root {
+    --main-color: #10708d;
+    --secondary-color: #0c6980;
+    --text-color: #0a0a0a;
+    --accent-color: #c36;
+    --highlight-color: #00e0e0;
+    --border-radius: 12px;
+    --transition: 0.3s ease;
+  }
+  
+  /* Section générique */
+  section {
+    padding: 60px 20px;
+    font-family: Montserrat-regular;
+  }
+  
+  /* Hero Section */
+  .loutil-canva-hero {
+    background: linear-gradient(135deg, var(--main-color), var(--secondary-color));
+    color: #fff;
+  }
+  
+  .loutil-canva-hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .loutil-canva-hero-text h1 {
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+    color: #f0f4f8;
+    font-family: Montserrat;
+  }
+  
+  .loutil-canva-btn {
+    background-color: #00A8A8;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .loutil-canva-btn:hover {
+    background-color: #a22a55;
+  }
+  
+  .loutil-canva-hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+  }
+  
+  /* Cards Section */
+  .loutil-canva-cards,
+  .loutil-canva-createur-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    background-color: #fff;
+  }
+  
+  .loutil-canva-card,
+  .loutil-canva-card-createur {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 30px;
+    width: 300px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: var(--transition);
+  }
+  
+  .loutil-canva-card-createur {
+    background-color: #fff;
+    border: 1px solid #eee;
+    padding: 20px;
+    max-width: 350px;
+    color: var(--text-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .loutil-canva-card:hover,
+  .loutil-canva-card-createur:hover,
+  .formule-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .loutil-canva-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
+  
+  .loutil-canva-card-createur i {
+    font-size: 1.5rem;
+    color: gold;
+  }
+
+.loutil-canva-icon i {
+    font-size: 2.5rem;
+    color: #0c6980;
+  }
+  
+  .loutil-canva-card h3,
+  .formule-card h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    font-family: Montserrat;
+  }
+  .loutil-canva-card-createur h4 {
+    /* margin: 10px 0; */
+    font-size: 0.8rem;
+    color: #666666;
+    font-family: Montserrat;
+  }
+  .loutil-canva-card-createur p {
+    font-size: 0.8rem;
+    color: #666666;
+    text-align: start;
+    line-height: 2.2;
+  }
+ 
+  
+  .loutil-canva-card p {
+    color: #ffffff88;
+  }
+  
+  .loutil-canva-card a,
+  .loutil-canva-blurbg a,
+  .formule-card .link {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--accent-color);
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .formule-card .link {
+    margin-top: 10px;
+  }
+  
+  .loutil-canva-blurbg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    color: #fff;
+    padding: 80px 20px;
+    overflow: hidden;
+  }
+  
+  .loutil-canva-info {
+    max-width: 600px;
+  }
+  
+  .loutil-canva-info h2 {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+  }
+  
+  .loutil-canva-info-text {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border: 2px solid var(--accent-color);
+    color: #515252;
+    border-radius: var(--border-radius);
+  }
+  .loutil-canva-info-text h3 {
+    font-family: Montserrat;
+    color: #3a3a3a;
+    font-size: 1.2rem;
+  }
+  .loutil-canva-info-text p {
+    font-size: 0.8rem;
+  }
+  
+  .loutil-canva-bg-radius {
+    text-align: end;
+  }
+  
+  .loutil-canva-bg-radius img {
+    max-width: 80%;
+    border-radius: var(--border-radius);
+  }
+  
+  .loutil-canva-temoignages {
+    background-color: #f2f2f2;
+    text-align: center;
+  }
+  
+  .loutil-canva-section-title,
+  .formules-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: var(--main-color);
+  }
+  .formules-section h3 {
+    font-size: 1.5rem;
+    color: var(--main-color);
+  }
+  .formules-section p {
+    font-size: 0.7rem;
+    color: #666666d5;
+  }
+  .loutil-canva-profile {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  .loutil-canva-profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  /* Formules */
+  .formules-section {
+    background-color: #f0f4f8;
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .formules-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .formule-card {
+    border-radius: var(--border-radius);
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+  }
+  
+  .icon {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 15px;
+  }
+  
+  .formule-card .description {
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .formule-card .price {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .formule-card .detail {
+    font-size: 0.85rem;
+    color: #666;
+  }
+  
+  .highlight-card {
+    background-color: var(--highlight-color) !important;
+    color: #fff;
+  }
+  
+  .highlight-card .link {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  /* Responsive */
+  @media (max-width: 992px) {
+    .formules-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .loutil-canva-hero-content,
+    .loutil-canva-blurbg {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .loutil-canva-hero-text h1 {
+      font-size: 2.5rem;
+    }
+  
+    .loutil-canva-bg-radius {
+      margin-top: 30px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .formules-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

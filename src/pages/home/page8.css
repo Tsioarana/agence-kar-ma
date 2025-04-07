@@ -1,0 +1,210 @@
+/* Section Banner */
+.banner-boutique {
+    background-color: #00a8a8;
+    color: white;
+    text-align: center;
+    font-family: Montserrat-regular;
+  }
+  
+  
+  .banner-boutique .text-container {
+    flex: 2;
+    padding: 20px;
+  }
+  
+  .banner-boutique .text-container h2 {
+    font-family: Montserrat;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+  
+  .banner-boutique .text-container p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .banner-boutique button {
+    background-color: #0c6980;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .banner-boutique button:hover {
+    background-color: rgb(2, 133, 133)
+  }
+  
+  @media (max-width: 768px) {
+    .banner-boutique  {
+      flex-direction: column;
+    }
+  }
+  
+  .logo-carousel {
+    padding: 80px 20px;
+    text-align: center;
+    font-family: Montserrat-regular;
+  }
+  
+  .logo-carousel h2 {
+    color: #0c6980;
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+    font-family: Montserrat;
+  }
+  
+  .swiper-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+  }
+  
+  .swiper-slide img {
+    max-width: 180px !important;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .swiper-wrapper {
+    margin-bottom: 20px;
+  }
+  
+  .swiper-pagination {
+    position: relative;
+    bottom: 10px;
+  }
+  
+  .swiper-pagination-bullet {
+    background-color: #007bff;
+    opacity: 0.7;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #ff7f50;
+    opacity: 1;
+  }
+
+
+
+
+  .conviction-parallax {
+    background-image: url('../../assets/images/img_3.jpg'); 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--text-color);
+    position: relative;
+  }
+
+  .conviction-parallax::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.568); 
+    z-index: 0;
+  }
+
+  .conviction-parallax > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .conviction-quote {
+    background: #0c6980;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.5rem;
+    max-width: 700px;
+    margin-bottom: 30px;
+  }
+
+  .conviction-quote strong {
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+
+  .conviction-content h2 {
+    color: #c36;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+  }
+
+  .conviction-content p {
+    max-width: 800px;
+    margin: 10px auto;
+    font-size: 1.1rem;
+    color: #f0f0f0c4;
+  }
+
+  .conviction-highlight {
+    font-weight: bold;
+    color: var(--secondary-color);
+  }
+
+  @media (max-width: 768px) {
+    .conviction-parallax {
+      padding: 30px 15px;
+    }
+
+    .conviction-quote {
+      font-size: 1.2rem;
+    }
+
+    .conviction-content h2 {
+      font-size: 2rem;
+    }
+
+    .conviction-content p {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .conviction-parallax {
+      padding: 20px 10px;
+    }
+
+    .conviction-quote {
+      font-size: 1rem;
+    }
+
+    .conviction-content h2 {
+      font-size: 1.6rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .swiper-slide {
+      width: 100%; 
+    }
+    .swiper-slide img {
+        max-width: 80px !important;
+      }
+  
+    .swiper-container {
+      padding: 10px 0;
+    }
+
+    .parlon-projet {
+      padding: 0 !important;
+    }
+    .parlon-proje-container {
+      width: 100% !important;
+    }
+  }
+  
+  

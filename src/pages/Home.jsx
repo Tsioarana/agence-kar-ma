@@ -1,11 +1,16 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./Home.css";
+import "./css/Home.css";
 import "./home/page1.css";
 import { img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12 } from "../assets";
 import Page1 from './home/page1';
 import Page2 from './home/page2';
 import Page3 from './home/page3';
 import Page4 from './home/page4';
+import Page5 from './home/page5';
+import Page6 from './home/page6';
+import Page7 from './home/page7';
+import Page8 from './home/page8';
+import Page9 from "./home/page9";
 const image = [
   { imageUrl: img1 },
   { imageUrl: img2 },
@@ -100,6 +105,11 @@ const Home = () => {
       <Page2 />
       <Page3 />
       <Page4 />
+      <Page5 />
+      <Page6 />
+      <Page7 />
+      <Page8 />
+      <Page9 />
     </>
   );
 };

@@ -1,0 +1,151 @@
+.container-graphisme {
+    max-width: 1100px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Montserrat-regular;
+}
+
+.container-graphisme h1, .text-graphisme h2, .card-graphisme h3 {
+    font-family: Montserrat;
+    text-align: center;
+}
+
+.container-graphisme h1 {
+    font-size: 2rem;
+    color: #0c6980;
+}
+
+.content-graphisme {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    text-align: center;
+}
+
+.content-graphisme img {
+    max-width: 42%;
+}
+
+.text-graphisme {
+    max-width: 55%;
+    color: #646262;
+}
+.text-graphisme p {
+    font-size: 0.8rem;
+}
+.text-graphisme h2 {
+    font-size: 1.5rem;
+    color: #7c7b7b;
+}
+
+.btn-outline-graphisme, .btn-solid-graphisme {
+    display: block;
+    padding: 10px;
+    margin: 10px auto;
+    border: 2px solid #003366;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-outline-graphisme {
+    color: #003366;
+    background: transparent;
+}
+
+.btn-outline-graphisme:hover, .btn-solid-graphisme {
+    background: #056987;
+    color: #fff;
+}
+
+.btn-solid-graphisme {
+    border: none;
+}
+
+.cards-container-graphisme {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.cards-container-graphisme h3{
+    font-size: 1.2rem;
+}
+
+.card-graphisme {
+    background: #056987;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    color: #cddee2;
+}
+
+.card-graphisme ul {
+    text-align: start;
+    padding: 5px 10px;
+    color: #cbced1;
+}
+
+.budget-graphisme {
+    text-align: center;
+    margin-top: 20px;
+    color: #cddee2;
+}
+.budget-graphisme h3 {
+    margin-top: 50px;
+}
+.card-graphisme ul li {
+    list-style: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.card-graphisme ul li:hover {
+    transform: scale(1.1);
+    color: #fff;
+}
+.container-graphisme .btn-outline-graphisme {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.container-graphisme .btn-outline-graphisme:hover {
+    transform: scale(1.1);
+}
+@media (max-width: 768px) {
+    .budget-graphisme h3 {
+        margin-top: 0;
+    }
+    .content-graphisme {
+        flex-direction: column;
+    }
+    
+    .content-graphisme img {
+        max-width: 80%;
+    }
+    
+    .text-graphisme {
+        max-width: 100%;
+    }
+    
+    .cards-container-graphisme {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .card-starategie {
+        max-width: 250px;
+    }
+    .card-site-web{
+        flex-direction: unset;
+    }
+    
+}

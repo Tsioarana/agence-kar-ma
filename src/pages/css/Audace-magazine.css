@@ -1,0 +1,146 @@
+.audace {
+    font-family: Montserrat-regular;
+    background-color: #f7f5f5;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.audace .audace-magazine {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.audace .audace-header {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.audace .audace-header img {
+    max-width: 45%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.audace .audace-header h1 {
+    font-size: 3rem;
+    flex: 1;
+}
+
+.audace .audace-feminin {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.audace .audace-feminin img {
+    max-width: 100%;
+}
+.audace h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #056987;
+    font-family: Montserrat, sans-serif;
+}
+
+.audace .magazine-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.audace .magazine {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.audace .magazine img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.audace .magazine:hover img {
+    transform: scale(1.1);
+}
+
+.audace h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #777373;
+}
+
+.audace p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.audace .btn {
+    margin-top: 10px;
+    padding: 5px;
+    width: 150px;
+    border: 2px solid #056987;
+    color: #db0959;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.audace .btn:hover {
+    background: #0056b3;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .audace .audace-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .audace .audace-header img {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .audace .audace-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .audace .audace-header img {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .audace .audace-header h1 {
+        font-size: 2rem;
+    }
+
+    .audace .audace-header img {
+        max-width: 90%;
+    }
+}

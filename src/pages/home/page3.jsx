@@ -1,6 +1,7 @@
 import React from 'react';
 import './page3.css';
 import { img13, karma, karma_flech } from '../../assets';
+import { Link } from 'react-router-dom';
 
 
 const Page3 = () => {
@@ -13,7 +14,9 @@ const Page3 = () => {
               <p className='reveal-right'>Nous avons choisis de placer <strong>l’éthique et la <br /> durabilité</strong> au cœur de nos actions.</p>
               <h2 className='reveal-right'>Une démarche solidaire et pleine de <br /> valeur – Engagez-vous avec nous !</h2>
               <h2 className='reveal-right'>Faites une bonne action tout <br /> en bénéficiant d’un service de <br /> qualité.</h2>
-              <a href="#" className="btn reveal-right">CONTACTEZ-NOUS !</a>
+              <Link to="/Contact" className="btn reveal-right">
+                CONTACTEZ-NOUS !
+              </Link>
             </div>
             <div className='hero-images'>
               <img src={img13} alt="" className='reveal-bottom' />

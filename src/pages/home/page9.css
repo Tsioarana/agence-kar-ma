@@ -1,0 +1,75 @@
+:root {
+    --color-primary: #0c6980;
+    --color-secondary: #c36;
+    --color-accent: #00a8a8;
+    --color-white: #fff;
+    --card-radius: 20px;
+    --transition-speed: 0.6s;
+  }
+  
+
+  .agence-karma {
+    font-family: Montserrat-regular;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+  }
+  
+  .karma-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .karma-card {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    border-radius: var(--card-radius);
+    width: 45%;
+    padding: 30px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.404);
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    border: 2px solid var(--color-secondary);
+  }
+  
+  .karma-card:hover {
+    transform: perspective(1000px) rotateY(6deg) rotateX(3deg) scale(1.03);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.3);
+  }
+  
+  .karma-card-content h2 {
+    color: var(--color-white);
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    position: relative;
+    text-align: start;
+  }
+  
+  .karma-card-content h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--color-secondary);
+    margin-top: 8px;
+    border-radius: 2px;
+  }
+  
+  .karma-card-content p {
+    color: #ffffffbd;
+    font-size: 0.8rem;
+    line-height: 1.6;
+  }
+  
+  /* Responsive : 1 colonne sur mobile */
+  @media (max-width: 768px) {
+    .karma-card {
+      width: 100%;
+    }
+  }
+  

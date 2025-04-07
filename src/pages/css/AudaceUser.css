@@ -1,0 +1,74 @@
+
+
+   .audace-user {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Montserrat-regular;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 80px;
+  }
+  
+  .audace-user h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .audace-user h2 {
+    font-size: 20px;
+    color: #444;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .audace-user h3 {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .audace-user h5 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0c6980;
+    margin-top: 15px;
+  }
+  
+  .audace-user p {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.5;
+  }
+  
+  .audace-user .swiper-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .audace-user .swiper-slide img {
+    margin: auto;
+    display: block;
+    width: 70%;
+    height: auto;
+    border-radius: 5px;
+  }
+  .swiper-slide img {
+    max-width: none;
+  }
+
+
+  @media (max-width: 768px) {
+    
+
+   .audace-user {
+    margin: 0;
+    margin-top: 80px;
+  }
+}

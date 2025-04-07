@@ -1,0 +1,120 @@
+.canva-container {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 150px;
+    font-family: Montserrat-regular;
+  }
+
+  .canva-container h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #056987;
+    font-family: Montserrat;
+    margin-bottom: 1rem;
+  }
+
+  .canva-container .canva-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .canva-container .canva-cards h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #056987;
+    margin-bottom: 1.4rem;
+  }
+  .canva-container .canva-card {
+    background: #e6dede;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+  }
+  .canva-container .canva-card i {
+    font-size: 2.5rem;
+    color: #3d3d3dce;
+    margin-bottom: 2rem;
+  }
+
+  .canva-container .canva-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  }
+
+  .canva-card:nth-child(1) { animation-delay: 0.2s; }
+  .canva-card:nth-child(2) { animation-delay: 0.4s; }
+  .canva-card:nth-child(3) { animation-delay: 0.6s; }
+  .canva-card:nth-child(4) { animation-delay: 0.8s; }
+  .canva-card:nth-child(5) { animation-delay: 1s; }
+  .canva-card:nth-child(6) { animation-delay: 1.2s; }
+
+  @keyframes fadeInUp {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+
+  .canva-container .highlight {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #056987;
+    font-family: Montserrat;
+    margin-bottom: 1rem;
+  }
+
+  .canva-container p {
+    color: #424040b6;
+    line-height: 1.6;
+  }
+
+  .canva-pricing {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+    justify-content: center;
+  }
+
+  .canva-pricing .canva-card {
+    text-align: center;
+    min-width: 200px;
+    background: #f0f0f0;
+  }
+  .canva-pricing .canva-card h4 {
+    color: #056987;
+    margin-bottom: 20px;
+  }
+
+  .canva-container .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background-color: #0099a9;
+    color:#ffffffbd;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+
+  .canva-container .btn:hover {
+    background-color: #056987;
+  }
+
+  @media (max-width: 768px) {
+    .canva-container {
+      padding: 20px;
+    }
+  
+    .canva-container h1 {
+      font-size: 1.5rem;
+    }
+    .canva-container .highlight {
+      font-size: 1.2rem;
+    }
+  }

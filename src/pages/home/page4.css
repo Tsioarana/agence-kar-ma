@@ -7,6 +7,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: parallaxMove 3s infinite alternate ease-in-out;
+}
+@keyframes parallaxMove {
+    0% { background-position: center 0px; }
+    100% { background-position: center 100px; }
 }
 .content-parallax {
     width: 100%;

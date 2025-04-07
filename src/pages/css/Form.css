@@ -1,0 +1,86 @@
+.form-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 100px;
+    font-family: Montserrat-regular;
+  }
+  
+  .form-container h2 {
+    text-align: start;
+    color: #0c6980;
+    font-family: Montserrat;
+  }
+
+  .form-container h4 {
+    text-align: start;
+    color: #000000a4;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+  }
+  
+  .form-container p {
+    font-size: 13px;
+    text-align: start;
+    margin-bottom: 20px;
+    color: #3c3c3d;
+  }
+  
+  .form-container  fieldset {
+    border: none;
+    margin-bottom: 20px;
+  }
+  
+  .form-container  legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #0c6980;
+    font-family: Montserrat;
+  }
+  
+  .form-container  .form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .form-container  .form-group {
+    flex: 1;
+  }
+  
+  .form-container  input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #0e0e0e75;
+    border-radius: 5px;
+  }
+  
+  .form-container .password-icon {
+    /* position: absolute; */
+    /* right: 10px; */
+    /* top: 50%; */
+    transform: translateY(-500%);
+    cursor: pointer;
+  }
+  
+  .form-container button {
+    /* width: 100%; */
+    padding: 10px;
+    background: #0c6980;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .form-container button:hover {
+    background: #0c6980b6;
+  }
+  .hidden {
+    display: none;
+  }
+  
