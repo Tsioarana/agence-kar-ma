@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import "./css/Offre-prestation.css";
 import { img_card, img_card2, img_card3, img_card4, img_card5, img_card6 } from "../assets";
 import PRICING_CONTENT from "../constants";
-const prestations = () => {
+const Offres_prestations = () => {
   return (
     <div>
       <Header />
@@ -119,4 +119,4 @@ const prestations = () => {
   );
 };
 
-export default prestations;
+export default Offres_prestations;
