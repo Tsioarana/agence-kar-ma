@@ -32,7 +32,8 @@ import FormulaireInscriptionG from "./pages/paiement-newsletter-gratuit";
 import CalendrierSocialMedia from "./pages/calendrier-social-media";
 import Assistancesurloutilcanva from "./pages/assistance-sur-loutil-canva";
 import Accompagnementsurloutilcanva from "./pages/accompagnement-sur-loutil-canva";
-import OffresPrestations from "./pages/offre-prestation";
+import OffresPrestations from "./pages/Offre-prestation";
+
 import QuiSommesNous from "./pages/qui-sommes-nous-2";
 
 const App = () => {
