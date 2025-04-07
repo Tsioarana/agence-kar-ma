@@ -5,7 +5,6 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
-import Offres_prestations from "./pages/offre-prestation";
 import Qui_sommes_nous from "./pages/qui-sommes-nous-2";
 import Newsletters from "./pages/Newsletters-veille-ops";
 import AudaceMagazine from "./pages/Audace-magazine";
@@ -34,6 +33,7 @@ import FormulaireInscriptionG from "./pages/paiement-newsletter-gratuit";
 import CalendrierSocialMedia from "./pages/calendrier-social-media";
 import Assistancesurloutilcanva from "./pages/assistance-sur-loutil-canva";
 import Accompagnementsurloutilcanva from "./pages/accompagnement-sur-loutil-canva";
+import OffresPrestations from "./pages/offre-prestation";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -78,7 +78,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/offres-et-prestations" element={<Offres_prestations />} />
+        <Route path="/offres-et-prestations" element={<OffresPrestations />} />
         <Route path="/qui-sommes-nous-2" element={<Qui_sommes_nous />} />
         <Route path="/audace-magazine" element={<AudaceMagazine />} />
         <Route path="/newsletters/souscription-newsletters" element={<Souscription />} />
